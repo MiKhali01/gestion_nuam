@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Este proyecto corresponde a una evaluación académica utilizando **Django** como framework back-end.  
+Este proyecto corresponde a una evaluación de Michelle Villalobos y Christian Águila utilizando **Django** como framework back-end.  
 El sistema gestiona **Empresas, Instrumentos Financieros y Calificaciones Tributarias** en el contexto de **NUAM (Núcleo Andino de Mercados)**.
 
 Incluye:
