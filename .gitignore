@@ -1,0 +1,30 @@
+# Archivos compilados de Python
+*.pyc
+__pycache__/
+
+# Base de datos SQLite (no queremos subirla a GitHub)
+db.sqlite3
+
+# Archivos de entorno (credenciales, claves, etc.)
+.env
+
+# Archivos de migraciones (opcional, si no quieres subirlos)
+*/migrations/*.py
+!*/migrations/__init__.py
+
+# Archivos estáticos generados
+/staticfiles/
+/media/
+
+# Archivos temporales
+*.log
+*.pot
+*.py[cod]
+*$py.class
+
+# Configuración de VSCode o PyCharm
+.vscode/
+.idea/
+
+# Entorno virtual
+venv/

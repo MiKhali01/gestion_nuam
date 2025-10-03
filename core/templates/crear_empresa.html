@@ -1,0 +1,7 @@
+<h2>Crear Empresa</h2>
+<form method="post">{% csrf_token %}
+    <input type="text" name="nombre" placeholder="Nombre"><br>
+    <input type="text" name="pais" placeholder="País"><br>
+    <input type="text" name="identificador" placeholder="RUT o ID"><br>
+    <button type="submit">Guardar</button>
+</form>

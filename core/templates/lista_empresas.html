@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Empresas NUAM</title>
+    <style>
+        body { font-family: Arial; margin: 20px; }
+        table { border-collapse: collapse; width: 70%; }
+        th, td { border: 1px solid #333; padding: 8px; }
+        a { margin: 0 5px; }
+    </style>
+</head>
+<body>
+    <h1>Lista de Empresas</h1>
+    <a href="{% url 'crear_empresa' %}">➕ Nueva Empresa</a>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>País</th>
+            <th>Identificador</th>
+            <th>Acciones</th>
+        </tr>
+        {% for e in empresas %}
+        <tr>
+            <td>{{ e.nombre }}</td>
+            <td>{{ e.pais }}</td>
+            <td>{{ e.identificador }}</td>
+            <td>
+                <a href="{% url 'editar_empresa' e.id %}">✏️ Editar</a>
+                <a href="{% url 'eliminar_empresa' e.id %}">🗑 Eliminar</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <script>
+        fetch("/", { headers: { "Accept": "application/json" }})
+          .then(r => r.json())
+          .then(data => console.log("Empresas JSON:", data));
+    </script>
+</body>
+</html>
