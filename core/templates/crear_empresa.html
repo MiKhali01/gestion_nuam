@@ -1,7 +1,17 @@
-<h2>Crear Empresa</h2>
-<form method="post">{% csrf_token %}
-    <input type="text" name="nombre" placeholder="Nombre"><br>
-    <input type="text" name="pais" placeholder="País"><br>
-    <input type="text" name="identificador" placeholder="RUT o ID"><br>
-    <button type="submit">Guardar</button>
+{% extends 'base.html' %}
+{% block content %}
+<h2>➕ Crear Empresa</h2>
+<form method="post" class="formulario">
+    {% csrf_token %}
+    <label>Nombre</label>
+    <input type="text" name="nombre" required>
+
+    <label>País</label>
+    <input type="text" name="pais" required>
+
+    <label>Identificador</label>
+    <input type="text" name="identificador" required>
+
+    <button type="submit" class="btn">Guardar</button>
 </form>
+{% endblock %}

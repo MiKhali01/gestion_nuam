@@ -1,0 +1,111 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f8fb;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background: #0b3768;
+    padding: 10px;
+    text-align: center;
+}
+.navbar a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Encabezados */
+h1, h2 {
+    text-align: center;
+    color: #0062a5;
+    margin-bottom: 20px;
+}
+
+/* Botones */
+a.btn, button.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 12px;
+    margin: 5px 0;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+a.btn.edit, button.btn.edit {
+    background: #8bbae5;
+}
+
+a.btn.delete {
+    background: #d7337b;
+}
+
+a.btn, button.btn {
+    background: #0b3768;
+}
+
+a.btn:hover, button.btn:hover {
+    opacity: 0.85;
+}
+
+/* Tablas */
+table.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table.tabla th {
+    background: #0062a5;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+table.tabla td {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+}
+
+table.tabla tr:hover {
+    background: #f1f1f1;
+}
+
+/* Formularios */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario label {
+    font-weight: bold;
+}
+
+.formulario input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
